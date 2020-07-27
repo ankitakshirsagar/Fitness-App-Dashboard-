@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" media="screen"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Open+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- vertical navbar -->
+  <div class="sidenav">
+    <div style="text-align: center;"><button class="navbtn" style="color: #220c7c;font-style: italic;">Run.</button></div>
+    <button class="iconbtn"><i class="fa fa-bolt"></i></button>
+    <button class="iconbtn"><i class="fa fa-comment"></i></button>
+    <button class="iconbtn"><i class="fa fa-inbox"></i></button>
+    <button class="iconbtn"><i class="fa fa-cog"></i></button>
+  </div>
+  <!-- vertical navbar ends -->
+
+  <!-- main section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 centerarea">
+        <ul class="row" style="list-style: none; padding-left: 20px;">
+          <li>
+            <div class="headingarea">
+              <button class="date">23 August 2019 <span style="padding-left: 10px;"><i class="fa fa-calendar"></i></span></button>
+              <h2 style="margin-top: 0px;color: #19085e;">Hello, Max <span style='font-size:25px;'>&#128075;</span></h2>
+              
+              <h4 style="color: rgb(185, 181, 181);">Here is your daily statistics</h4>
+              
+            </div>
+          </li>
+
+          <li>
+            <div class="row overallrate">
+              <div class="col-md-3 rate" style="border-radius: 15px;">
+                <div class="col-md-5 ratebar">
+                <h5 style="color: rgb(236, 67, 67);">Heart <span style="color: gray;"><i class="fa fa-heart"></i></span></h5>
+                <h3>119 <span>bpm</span></h3>
+              </div>
+              <div class="col-md-5 progressbar">
+                  <div class="progress vertical">
+                    <div class="progress-bar heart" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"> <span style="color: rgb(77, 76, 76);">82%</span>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 rate" style="border-radius: 15px;">
+                <div class="col-md-5 ratebar">
+                  <h5 style="color: rgb(119, 235, 103);">Running <span style="color: gray;"><i class="fa fa-running"></i></span></h5>
+                  <h3>3043 <span>m</span></h3>
+              </div>
+              <div class="col-md-5 progressbar">
+                  <div class="progress vertical">
+                    <div class="progress-bar running" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span style="color: rgb(75, 74, 74);">65%</span>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 rate" style="border-radius: 15px;">
+                <div class="col-md-5 ratebar">
+                  <h5 style="color: rgb(245, 115, 28);">Calories <span style="color: gray;"><i class="fa fa-fire"></i></span></h5>
+                  <h3>301 <span>kcal</span></h3>
+              </div>
+              <div class="col-md-5 progressbar">
+                  <div class="progress vertical">
+                    <div class="progress-bar calories" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ><span style="color: rgb(75, 74, 74);">40%</span>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row activity">
+              <div class="col-md-11 statistics">
+                <div class="col-md-8 barchart">
+                <h5>Activity</h5>
+                <div id="chart_div"></div>
+              </div>
+                <div class="col-md-3 goals">
+                  <h5>You've done today's goals!</h5>
+                  <button class="goalbtn">100%</button>
+                </div>
+              </div>
+              
+            </div>
+          </li>
+
+          <li>
+            <div class="row">
+<div class="col-md-12 map">
+  <div class="overlay">
+    <div class="row">
+      <div class="col-md-6">
+    <p style="color: white;margin-bottom: 10px;font-size: 12px;">Running</p>
+        <p style="color: white;font-size: 17px;margin-bottom: 0px;">6.35 km</p>    
+        <p style="color: white;font-size: 10px;">Distance</p>
+  </div>
+  <div class="col-md-6" style="margin-top: 25px;">
+    <p style="color: white;font-size: 17px;margin-bottom: 0px;">7.51 min</p>    
+        <p style="color: white;font-size: 10px;">Ride Time</p>
+  </div>
+</div>
+</div>
+<img src="../images/map.png" alt="" style="width: 900px;height: 310px;opacity: 0.7;">
+</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- main section ends -->
+
+      <!-- right section -->
+      <div class="row rightarea">
+        <div class="col-md-3" style="padding-left: 20px;">
+          <div class="row">
+            <div class="col-md-11" style="margin-top: 40px;">
+              <button class="notify" style="display: inline;"><i class="fa fa-bell"></i></button>
+              <button class="notify" style="display: inline;"><i class="fa fa-comment"></i></button>
+              <h3 class="name">Max Miles</h3>
+              <a target="_blank" href="../images/max.jpg">
+                <img class="userimg" src="../images/max.jpg" alt="Max">
+              </a>
+            </div>
+          </div>
+
+          <div class="row today">
+            <p style="margin-left: 20px;font-size: 15px;">Today<span style="margin-left: 290px;color: rgb(173, 173, 173);"><i class="fa fa-calendar"></i></span></p>
+            <div class="col-md-11 todaybar">
+                <div class="col-md-5 excercise">
+                <h5>Aerobics</h5>
+                <p>Violine Aerobics Club</p>
+              </div>
+                <div class="col-md-5 timebar">
+                <button class="timebtn">08:30 &nbsp;<span style="color: rgb(185, 181, 181);font-size: small;">09:30</span></button>
+                </div>
+            </div>
+            <div class="col-md-11 todaybar">
+              <div class="col-md-5 excercise">
+              <h5>Pilates</h5>
+              <p>Lady Fit</p>
+            </div>
+              <div class="col-md-5 timebar">
+              <button class="timebtn">08:30 &nbsp;<span style="color: rgb(185, 181, 181);font-size: small;">09:30</span></button>
+              </div>
+          </div>
+          <div class="col-md-11 todaybar">
+            <div class="col-md-5 excercise">
+            <h5>Box</h5>
+            <p>Sport Club Matrix</p>
+          </div>
+            <div class="col-md-5 timebar">
+            <button class="timebtn">08:30 &nbsp;<span style="color: rgb(185, 181, 181);font-size: small;">09:30</span></button>
+            </div>
+        </div>
+          </div>
+
+          <div class="row" style="margin-top: 30px;">
+            <p class="trainer">Top Trainer<span style="margin-left: 260px;color: rgb(179, 174, 174);"><i class="fa fa-search"></i></span></p>
+            <div class="col-md-11 person">
+              <div class="col-md-1 trainerimg">
+                <a target="_blank" href="../images/max.jpg" style="display: inline;">
+                  <img class="userimg" src="../images/max.jpg" alt="trainer">
+                </a>
+              </div>
+              <div class="col-md-5 trainerdetails">
+                <h6 style="font-size: 15px;">Branden Jones</h6>
+                <p>Sport Club Matrix</p>
+            </div>
+            <div class="col-md-1" style="margin-top: 10px;">
+              <i style="font-size: 20px;color: rgb(228, 191, 27);" class="fa fa-star"></i>
+              <p>3.5</p>
+            </div>
+              <div class="col-md-3" style="padding-right: 0px;display:inline;text-align: right;">
+                <button class="social" style="display: inline;color: rgb(34, 188, 235);"><i class="fa fa-twitter"></i></button>
+                <button class="social" style="display: inline;color: rgb(22, 6, 168);"><i class="fa fa-facebook"></i></button>
+              </div>
+          </div>
+           
+          <div class="col-md-11 person">
+            <div class="col-md-1 trainerimg">
+              <a target="_blank" href="../images/max.jpg" style="display: inline;">
+                <img class="userimg" src="../images/max.jpg" alt="trainer">
+              </a>
+            </div>
+            <div class="col-md-5 trainerdetails">
+              <h6 style="font-size: 15px;">Lee Murphy</h6>
+              <p>Pole Dance</p>
+          </div>
+          <div class="col-md-1" style="margin-top: 10px;">
+            <i style="font-size: 20px;color: rgb(228, 191, 27);" class="fa fa-star"></i>
+            <p>3.5</p>
+          </div>
+            <div class="col-md-3" style="padding-right: 0px;display:inline;text-align: right;">
+              <button class="social" style="display: inline;color: rgb(34, 188, 235);"><i class="fa fa-twitter"></i></button>
+            </div>
+        </div>
+         
+        <div class="col-md-11 person">
+          <div class="col-md-1 trainerimg">
+            <a target="_blank" href="../images/max.jpg" style="display: inline;">
+              <img class="userimg" src="../images/max.jpg" alt="trainer">
+            </a>
+          </div>
+          <div class="col-md-5 trainerdetails">
+            <h6 style="font-size: 15px;">Ted John</h6>
+            <p>Crossfit</p>
+        </div>
+        <div class="col-md-1" style="margin-top: 10px;">
+          <i style="font-size: 20px;color: rgb(228, 191, 27);" class="fa fa-star"></i>
+          <p>3.5</p>
+        </div>
+          <div class="col-md-3" style="padding-right: 0px;display:inline;text-align: right;">
+            <button class="social" style="display: inline;color: rgb(34, 188, 235);"><i class="fa fa-twitter"></i></button>
+                <button class="social" style="display: inline;color: rgb(22, 6, 168);"><i class="fa fa-facebook"></i></button>
+          </div>
+      </div>
+
+      <div class="col-md-11 person">
+        <div class="col-md-1 trainerimg">
+          <a target="_blank" href="../images/max.jpg" style="display: inline;">
+            <img src="../images/max.jpg" alt="trainer" style="width:50px;height:50px;border-radius: 10px;margin-left: 5px;">
+          </a>
+        </div>
+        <div class="col-md-5 trainerdetails">
+          <h6 style="font-size: 15px;">Marvin Wilson</h6>
+          <p>Fitness</p>
+      </div>
+      <div class="col-md-1" style="margin-top: 10px;">
+        <i style="font-size: 20px;color: rgb(228, 191, 27);" class="fa fa-star"></i>
+        <p>3.5</p>
+      </div>
+        <div class="col-md-3" style="padding-right: 0px;display:inline;text-align: right;">
+          <button class="social" style="display: inline;color: rgb(34, 188, 235);"><i class="fa fa-twitter"></i></button>
+                <button class="social" style="display: inline;color: rgb(22, 6, 168);"><i class="fa fa-facebook"></i></button>
+        </div>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/barchart.js"></script>
+</body>
+
+</html>
+
