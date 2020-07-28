@@ -52,6 +52,7 @@ body {
   background-color: #f4f4f8;
   margin-left: 80px;
   height: 100%;
+  width: 65.666666%;
 }
 
 .ratebar {
@@ -146,7 +147,6 @@ body {
   width: 40%;
 }
 
-
 .progress-bar {
   box-shadow: inset 0px 4px 6px rgba(100, 100, 100, 0.6);
 }
@@ -182,7 +182,7 @@ body {
 
 .overallrate .rate {
   background-color: white;
-  width: 275px;
+  width: 265px;
   margin-right: 40px;
   padding: 0px 0px 0px 0px;
 }
@@ -213,8 +213,6 @@ body {
   font-size: 17px;
   text-align: center;
 }
-
-
 
 .map {
   background-color: white;
@@ -321,7 +319,6 @@ body {
   background-color: #e4e1f0;
   margin: 10px 10px;
 }
-
 
 .notify {
   padding: 4px 10px 4px 10px;
